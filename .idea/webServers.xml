@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="39d144a8-6da6-498f-a826-5d432bb08c08" name="igriwe">
+        <fileTransfer rootFolder="/var/www/sites/admin_igriwe" accessType="SFTP" host="192.168.0.104" port="22" sshConfigId="1203c6b3-cd57-47cc-807b-9aaef834bc4d" sshConfig="root@192.168.0.104:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
