@@ -1,6 +1,8 @@
 controllers:
   resource: ../../src/Controller/
   type: annotation
+  host: "admin.%app.root_domain%"
+
 
 kernel:
   resource: ../../src/Kernel.php
