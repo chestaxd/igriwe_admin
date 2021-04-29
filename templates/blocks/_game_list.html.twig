@@ -1,0 +1,37 @@
+<table class="table table-sm">
+    <tr class="table-active">
+        <th>{{ knp_pagination_sortable(games, 'Id', 'id') }}</th>
+        <th{% if games.isSorted('name') %} class="sorted"{% endif %}>
+            {{ knp_pagination_sortable(games, 'Название', 'name') }}
+        </th>
+        <th>Категория</th>
+
+        <th{% if games.isSorted('create_date') %} class="sorted"{% endif %}>
+            {{ knp_pagination_sortable(games, 'Дата создания', 'create_date') }}
+        </th>
+        <th>Удалить</th>
+    </tr>
+    {% for game in games %}
+        <tr {% if loop.index is odd %}class="color"{% endif %}>
+            <td>{{ game.id }}</td>
+            <td><a href="{{ path('game_edit',{gameId:game.id}) }}">
+                    {% if game.getImg %}
+                        <img style="width: 40px"
+                             src="{{ asset(getImageUrl(game.getImg,'image.game.original')) }}"
+                             alt="">
+                    {% endif %}
+                    {{ game.name }}
+                </a></td>
+            <td>{{ game.category.getName }}</td>
+            <td>{{ game.createDate | date('Y-m-d H:i:s') }}</td>
+            <td><a onclick="return confirm('Удалить?')" href="{{ path('game_delete',{id:game.id}) }}">
+                    <button type="button" class="btn btn-outline-danger">
+                        <i class="bi bi-file-x-fill"></i>
+                    </button>
+                </a></td>
+        </tr>
+    {% endfor %}
+</table>
+<div class="navigation">
+    {{ knp_pagination_render(games) }}
+</div>

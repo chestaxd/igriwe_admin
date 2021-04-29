@@ -1,0 +1,27 @@
+{% block multiselect_type_widget %}
+
+    <link rel="stylesheet" href="{{ asset('css/jquery-ui.min.css') }}">
+    <link href="{{ asset('css/jquery.multiselect.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('css/jquery.multiselect.filter.css') }}" rel="stylesheet"/>
+    {{ form_widget(form) }}
+    <script>
+        var scripts = {{ form.vars.scripts | json_encode|raw }};
+
+        function addScript(src, callback) {
+            var s = document.createElement('script');
+            s.setAttribute('src', src);
+            s.onload = callback;
+            document.body.appendChild(s);
+        }
+
+        var counter = 0;
+        var callback = function () {
+            if (scripts[counter]) {
+                addScript(scripts[counter], callback);
+                counter++;
+            }
+        };
+        callback();
+    </script>
+
+{% endblock %}

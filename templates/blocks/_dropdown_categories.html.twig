@@ -1,0 +1,8 @@
+{% for category in categories %}
+    <div class="dropdown-item container">
+        <a class="badge badge-secondary" href="{{ path('category_edit',{categoryId:category.id}) }}"><i
+                    class="bi bi-gear-fill"></i></a>
+        <a class="badge badge-light"
+           href="{{ path('games_in_category',{categoryId:category.id}) }}">{{ category.name }}</a>
+    </div>
+{% endfor %}

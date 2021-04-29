@@ -1,2 +1,8 @@
 twig:
-    default_path: '%kernel.project_dir%/templates'
+  default_path: '%kernel.project_dir%/templates'
+  form_themes:
+    - bootstrap_4_horizontal_layout.html.twig
+    - form/img_type.html.twig
+    - form/multiselect_type.html.twig
+
+

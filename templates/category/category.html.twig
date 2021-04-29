@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+{# {% if category.id %} #}
+{# <div>{{ category.name }}</div> #}
+{# <div><a href="{{ path('category_delete',{id:category.id}) }}">Удалить</a></div> #}
+{# {% endif %} #}
+    {% block form %}
+        {{ form_start(form) }}
+        {{ form_end(form) }}
+    {% endblock %}

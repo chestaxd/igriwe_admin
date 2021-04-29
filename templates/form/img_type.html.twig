@@ -1,0 +1,17 @@
+{% block img_type_row %}
+    <div class="form-group row">
+        {{ form_label(form) }}
+        <div class="col-sm-10">
+            {{ form_widget(form) }}
+            {{ form_help(form) }}
+            {% if file_uri is defined and file_uri is not null %}
+                <img style="width: 200px;" id="image_preview" src="{{ getImageUrl(file_uri,image_config) }}" alt=""
+                     class="mt-2 img-thumbnail"/>
+            {% else %}
+                <img style="width: 200px;" id="image_preview" src="{{ asset('/images/no_image.png') }}" alt=""
+                     class="mt-2 img-thumbnail"/>
+            {% endif %}
+{#            <img style="width: 200px;" id="image_preview" src="#" class="mt-2 img-thumbnail" alt="image preview"/>#}
+        </div>
+    </div>
+{% endblock %}

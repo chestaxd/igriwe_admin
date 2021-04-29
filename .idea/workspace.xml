@@ -2,13 +2,130 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10abd77c-3ca1-4f3c-bc2f-7be9e08de640" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/admin_igriwe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/admin_igriwe.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/images_config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/paginator.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/routes/annotations.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/images/ui-icons_444444_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/images/ui-icons_555555_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/images/ui-icons_777620_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/images/ui-icons_777777_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/images/ui-icons_cc0000_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/images/ui-icons_ffffff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/jquery-ui.structure.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/jquery-ui.structure.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/jquery-ui.theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/jquery-ui.theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/jquery.multiselect.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/jquery.multiselect.filter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/category/606c7dca28f46.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/category/606cd5bfecf41.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/category/606dbdb4cbf52.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/category/606dcf60651f2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/category/606de17a4487c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/category/606de192487b9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/category/607082d285723.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/606c75e0ac090.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/606cd69b8829d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/606da033a97cc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/606db4d0b4bfe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/606db58358f94.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/606db5a1310bb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/606db5d86b4bf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/606db63b728c0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/606db9e337039.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/606dba0d5d3fc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/606dba3d9f258.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/606dba8eb5ba7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/6070f33258cc0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/6070f3478e2f8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/6070f385b17f1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/6070f90adec6e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/6070faaeab0f9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/607593206c935.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/60759ea1e9811.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/6078378acb754.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/607980b358450.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/607980f44e8c0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/607980f9e3d38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/6079811e4a8af.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/6079812411458.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/6079826859aa8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/6079853b96dab.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game/607d947e5fcb9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/no_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jQuery-3.6.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.multiselect.filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.multiselect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/multiselectOptions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AdminFaceController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/GameController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/TagController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/TemplateBlocksController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Game.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Tag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/CategoryFormType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/GameFormType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/TagFormType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/Type/ImgFileType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/Type/MultiSelectType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/Type/StatusType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/CategoryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/GameRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/TagRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RequestSubscriber/RequestSubscriber.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/AdminAuthenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/Image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/ImageService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Twig/TwigImageExtension.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blocks/_dropdown_categories.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blocks/_dropdown_tags.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blocks/_game_list.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/category/category.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/category/category_games.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/category/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/form/img_type.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/form/multiselect_type.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/game/game.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/search.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/tag/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/tag/tag.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/tag/tag_games.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.test" beforeDir="false" afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/prod/deprecations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/prod/deprecations.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/prod/monolog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/prod/monolog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,11 +256,16 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1rr6L46k1P6MANPEG9gKLw47oU7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
@@ -156,7 +278,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunAnythingCache">
@@ -173,12 +295,25 @@
       <option name="presentableId" value="Default" />
       <updated>1619721801564</updated>
       <workItem from="1619721808786" duration="1567000" />
-      <workItem from="1619723453148" duration="5238000" />
+      <workItem from="1619723453148" duration="7252000" />
     </task>
+    <task id="LOCAL-00001" summary="Add src folder">
+      <created>1619732749506</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1619732749506</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Add src folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add src folder" />
   </component>
   <component name="WindowStateProjectService">
     <state x="439" y="375" key="#CLI_Interpreters" timestamp="1619732535483">
@@ -205,22 +340,26 @@
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
     <state x="435" y="365" key="#SSH_Configurations/63.0.2497.1440@63.0.2497.1440" timestamp="1619722159323" />
-    <state x="357" y="284" width="1180" height="970" key="CommitChangelistDialog2" timestamp="1619723748262">
+    <state x="451" y="378" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619734687804">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
-    <state x="357" y="284" width="1180" height="970" key="CommitChangelistDialog2/63.0.2497.1440@63.0.2497.1440" timestamp="1619723748262" />
+    <state x="451" y="378" key="#com.intellij.execution.impl.EditConfigurationsDialog/63.0.2497.1440@63.0.2497.1440" timestamp="1619734687804" />
+    <state x="357" y="284" width="1180" height="970" key="CommitChangelistDialog2" timestamp="1619732748867">
+      <screen x="63" y="0" width="2497" height="1440" />
+    </state>
+    <state x="357" y="284" width="1180" height="970" key="CommitChangelistDialog2/63.0.2497.1440@63.0.2497.1440" timestamp="1619732748867" />
     <state x="639" y="475" key="FileChooserDialogImpl" timestamp="1619732564488">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
     <state x="639" y="475" key="FileChooserDialogImpl/63.0.2497.1440@63.0.2497.1440" timestamp="1619732564488" />
-    <state x="360" y="365" key="SettingsEditor" timestamp="1619732664789">
+    <state x="360" y="365" key="SettingsEditor" timestamp="1619733806717">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
-    <state x="360" y="365" key="SettingsEditor/63.0.2497.1440@63.0.2497.1440" timestamp="1619732664789" />
-    <state x="451" y="453" key="Vcs.Push.Dialog.v2" timestamp="1619723758141">
+    <state x="360" y="365" key="SettingsEditor/63.0.2497.1440@63.0.2497.1440" timestamp="1619733806717" />
+    <state x="451" y="453" key="Vcs.Push.Dialog.v2" timestamp="1619732755021">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
-    <state x="451" y="453" key="Vcs.Push.Dialog.v2/63.0.2497.1440@63.0.2497.1440" timestamp="1619723758141" />
+    <state x="451" y="453" key="Vcs.Push.Dialog.v2/63.0.2497.1440@63.0.2497.1440" timestamp="1619732755021" />
     <state x="163" y="100" width="1392" height="1240" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1619729967387">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
@@ -229,6 +368,10 @@
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
     <state x="670" y="578" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration/63.0.2497.1440@63.0.2497.1440" timestamp="1619732447902" />
+    <state x="566" y="453" width="742" height="811" key="find.popup" timestamp="1619734353692">
+      <screen x="63" y="0" width="2497" height="1440" />
+    </state>
+    <state x="566" y="453" width="742" height="811" key="find.popup/63.0.2497.1440@63.0.2497.1440" timestamp="1619734353692" />
     <state x="698" y="450" key="ftp.server.browser" timestamp="1619723038391">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
@@ -237,9 +380,9 @@
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
     <state x="515" y="342" key="run.anything.popup/63.0.2497.1440@63.0.2497.1440" timestamp="1619722807771" />
-    <state x="655" y="458" key="webDeployment.PermissionsDialog.Tabs" timestamp="1619722991222">
+    <state x="655" y="458" key="webDeployment.PermissionsDialog.Tabs" timestamp="1619734657924">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
-    <state x="655" y="458" key="webDeployment.PermissionsDialog.Tabs/63.0.2497.1440@63.0.2497.1440" timestamp="1619722991222" />
+    <state x="655" y="458" key="webDeployment.PermissionsDialog.Tabs/63.0.2497.1440@63.0.2497.1440" timestamp="1619734657924" />
   </component>
 </project>

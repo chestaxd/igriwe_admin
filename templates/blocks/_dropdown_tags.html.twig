@@ -1,0 +1,7 @@
+{% for tag in tags %}
+    <div class="dropdown-item container">
+        <a class="badge badge-secondary" href="{{ path('tag_edit',{tagId:tag.id}) }}"><i
+                    class="bi bi-gear-fill"></i></a>
+        <a class="badge badge-light" href="{{ path('games_in_tag',{tagId:tag.id}) }}">{{ tag.name }}</a>
+    </div>
+{% endfor %}
