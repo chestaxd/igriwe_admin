@@ -33,5 +33,5 @@ security:
     ROLE_ADMIN:       ROLE_ADMIN
     ROLE_SUPER_ADMIN: ROLE_ADMIN
   access_control:
-    - { path: ^/(login|register|logout), roles: IS_AUTHENTICATED_ANONYMOUSLY, host: "admin.%app.root_domain%" }
+    - { path: ^/(login|logout), roles: IS_AUTHENTICATED_ANONYMOUSLY, host: "admin.%app.root_domain%" }
     - { path: ^/, roles: ROLE_SUPER_ADMIN, host: "admin.%app.root_domain%" }
