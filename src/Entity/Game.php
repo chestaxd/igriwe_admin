@@ -25,7 +25,7 @@ class Game
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=25)
+     * @ORM\Column(type="string", length=100)
      */
     private $name;
 
@@ -63,9 +63,9 @@ class Game
     private $img;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="boolean")
      */
-    private $status;
+    private $isPublished = 0;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -178,17 +178,6 @@ class Game
         return $this;
     }
 
-    public function getStatus(): ?string
-    {
-        return $this->status;
-    }
-
-    public function setStatus(string $status): self
-    {
-        $this->status = $status;
-
-        return $this;
-    }
 
     public function getKeywords(): ?string
     {
@@ -200,5 +189,21 @@ class Game
         $this->keywords = $keywords;
 
         return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getIsPublished(): int
+    {
+        return $this->isPublished;
+    }
+
+    /**
+     * @param int $isPublished
+     */
+    public function setIsPublished(int $isPublished): void
+    {
+        $this->isPublished = $isPublished;
     }
 }

@@ -36,13 +36,13 @@ final class GameFactory extends ModelFactory
     protected function getDefaults(): array
     {
         return [
-            'name' => self::faker()->word(),
+            'name' => ucfirst(self::faker()->words(3, true)),
             'description' => self::faker()->text(200),
             'data' => self::faker()->url,
             'img' => self::faker()->imageUrl(200, 150, 'games'),
             'keywords' => self::faker()->words(10, true),
-            'status' => 'published',
-            'createdAt' => self::faker()->dateTimeBetween('-1 week', '+1 week'),
+            'isPublished' => 1,
+            'createdAt' => self::faker()->dateTimeBetween('-2 week', '-1 week'),
         ];
     }
 

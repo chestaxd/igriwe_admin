@@ -9,6 +9,9 @@
         <th{% if games.isSorted('createdAt') %} class="sorted"{% endif %}>
             {{ knp_pagination_sortable(games, 'Дата создания', 'createdAt') }}
         </th>
+        <th{% if games.isSorted('updatedAt') %} class="sorted"{% endif %}>
+            {{ knp_pagination_sortable(games, 'Дата обновления', 'updatedAt') }}
+        </th>
         <th>Удалить</th>
     </tr>
     {% for game in games %}
@@ -24,6 +27,7 @@
                 </a></td>
             <td>{{ game.category.name }}</td>
             <td>{{ game.createdAt | date('Y-m-d H:i:s') }}</td>
+            <td>{{ game.updatedAt | date('Y-m-d H:i:s') }}</td>
             <td><a onclick="return confirm('Удалить?')" href="{{ path('game_delete',{id:game.id}) }}">
                     <button type="button" class="btn btn-outline-danger">
                         <i class="bi bi-file-x-fill"></i>

@@ -63,7 +63,13 @@ class GameFormType extends AbstractType
                 ],
                 'label' => 'Вставлять рекламу?'
             ])
-            ->add('status', StatusType::class)
+            ->add('isPublished', ChoiceType::class, [
+                'choices' => [
+                    'Да' => 1,
+                    'Не' => 0
+                ],
+                'label' => 'Опубликовано:'
+            ])
             ->add('img', ImgFileType::class, [
                 'label' => 'Картинка',
                 'image_config' => 'image.game.original',
