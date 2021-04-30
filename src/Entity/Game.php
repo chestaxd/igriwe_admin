@@ -7,6 +7,7 @@ use App\Repository\GameRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Timestampable\Traits\TimestampableEntity;
 
 /**
  * @ORM\Entity(repositoryClass=GameRepository::class)
@@ -14,6 +15,8 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Game
 {
+
+    use TimestampableEntity;
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
@@ -26,15 +29,11 @@ class Game
      */
     private $name;
 
-    /**
-     * @ORM\Column(type="datetime")
-     */
-    private $createDate;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $descr;
+    private $description;
 
     /**
      * @ORM\Column(type="boolean", options={"default": 1})
@@ -75,7 +74,6 @@ class Game
 
     public function __construct()
     {
-        $this->createDate = new \DateTime();
         $this->tags = new ArrayCollection();
     }
 
@@ -96,26 +94,14 @@ class Game
         return $this;
     }
 
-    public function getCreateDate(): ?\DateTimeInterface
+    public function getDescription(): ?string
     {
-        return $this->createDate;
+        return $this->description;
     }
 
-    public function setCreateDate(\DateTimeInterface $createDate): self
+    public function setDescription(string $description): self
     {
-        $this->createDate = $createDate;
-
-        return $this;
-    }
-
-    public function getDescr(): ?string
-    {
-        return $this->descr;
-    }
-
-    public function setDescr(string $descr): self
-    {
-        $this->descr = $descr;
+        $this->description = $description;
 
         return $this;
     }

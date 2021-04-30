@@ -20,7 +20,7 @@ class CategoryFormType extends AbstractType
     {
         $builder
             ->add('name', TextType::class)
-            ->add('descr', TextareaType::class, [
+            ->add('description', TextareaType::class, [
                 'constraints' => [
                     new Length([
                         'min' => 30,

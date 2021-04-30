@@ -42,7 +42,7 @@ class GameFormType extends AbstractType
                 'label' => 'Iframe',
                 'default_protocol' => 'https'
             ])
-            ->add('descr', TextareaType::class, [
+            ->add('description', TextareaType::class, [
                 'label' => 'Описание'
             ])
             ->add('keywords', TextType::class)

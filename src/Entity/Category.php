@@ -29,7 +29,7 @@ class Category
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $descr;
+    private $description;
 
     /**
      * @ORM\Column(type="string", length=20)
@@ -74,14 +74,14 @@ class Category
         return $this;
     }
 
-    public function getDescr(): ?string
+    public function getDescription(): ?string
     {
-        return $this->descr;
+        return $this->description;
     }
 
-    public function setDescr(string $descr): self
+    public function setDescription(string $description): self
     {
-        $this->descr = $descr;
+        $this->description = $description;
 
         return $this;
     }

@@ -29,7 +29,7 @@ class Tag
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $descr;
+    private $description;
 
     /**
      * @ORM\ManyToMany(targetEntity=Game::class, mappedBy="tags")
@@ -58,14 +58,14 @@ class Tag
         return $this;
     }
 
-    public function getDescr(): ?string
+    public function getDescription(): ?string
     {
-        return $this->descr;
+        return $this->description;
     }
 
-    public function setDescr(string $descr): self
+    public function setDescription(string $description): self
     {
-        $this->descr = $descr;
+        $this->description = $description;
 
         return $this;
     }

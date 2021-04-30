@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10abd77c-3ca1-4f3c-bc2f-7be9e08de640" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210430105151.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/admin_igriwe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/admin_igriwe.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b4db699f-a1b0-47c2-a244-e8e32f38fc08.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b4db699f-a1b0-47c2-a244-e8e32f38fc08.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Game.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Game.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tag.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/CategoryFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/CategoryFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/GameFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/GameFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/TagFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/TagFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +38,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/migrations/Version20210430105151.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -137,6 +153,9 @@
       <path value="$PROJECT_DIR$/vendor/nelmio/cors-bundle" />
       <path value="$PROJECT_DIR$/vendor/api-platform/core" />
       <path value="$PROJECT_DIR$/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/vendor/stof/doctrine-extensions-bundle" />
+      <path value="$PROJECT_DIR$/vendor/behat/transliterator" />
+      <path value="$PROJECT_DIR$/vendor/gedmo/doctrine-extensions" />
     </include_path>
   </component>
   <component name="ProjectId" id="1rr6L46k1P6MANPEG9gKLw47oU7" />
@@ -170,8 +189,13 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chest\PhpstormProjects\admin_igriwe" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -187,7 +211,8 @@
       <option name="presentableId" value="Default" />
       <updated>1619721801564</updated>
       <workItem from="1619721808786" duration="1567000" />
-      <workItem from="1619723453148" duration="9741000" />
+      <workItem from="1619723453148" duration="10908000" />
+      <workItem from="1619779579390" duration="1332000" />
     </task>
     <task id="LOCAL-00001" summary="Add src folder">
       <created>1619732749506</created>
@@ -210,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619736356099</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hide register form">
+      <created>1619737418542</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1619737418542</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,17 +255,18 @@
     <MESSAGE value="Add src folder" />
     <MESSAGE value="admin ready" />
     <MESSAGE value="Install Api =)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Install Api =)" />
+    <MESSAGE value="hide register form" />
+    <option name="LAST_COMMIT_MESSAGE" value="hide register form" />
   </component>
   <component name="WindowStateProjectService">
     <state x="439" y="375" key="#CLI_Interpreters" timestamp="1619732535483">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
     <state x="439" y="375" key="#CLI_Interpreters/63.0.2497.1440@63.0.2497.1440" timestamp="1619732535483" />
-    <state x="451" y="378" key="#Deployment" timestamp="1619736350555">
+    <state x="451" y="378" key="#Deployment" timestamp="1619737533400">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
-    <state x="451" y="378" key="#Deployment/63.0.2497.1440@63.0.2497.1440" timestamp="1619736350555" />
+    <state x="451" y="378" key="#Deployment/63.0.2497.1440@63.0.2497.1440" timestamp="1619737533400" />
     <state x="652" y="440" width="575" height="559" key="#Docker" timestamp="1619732507294">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
@@ -242,50 +275,66 @@
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
     <state x="610" y="544" key="#Notifications/63.0.2497.1440@63.0.2497.1440" timestamp="1619730014652" />
-    <state x="536" y="401" key="#Options" timestamp="1619731825869">
+    <state x="536" y="401" key="#Options" timestamp="1619737981645">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
-    <state x="536" y="401" key="#Options/63.0.2497.1440@63.0.2497.1440" timestamp="1619731825869" />
+    <state x="536" y="401" key="#Options/63.0.2497.1440@63.0.2497.1440" timestamp="1619737981645" />
     <state x="435" y="365" key="#SSH_Configurations" timestamp="1619722159323">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
     <state x="435" y="365" key="#SSH_Configurations/63.0.2497.1440@63.0.2497.1440" timestamp="1619722159323" />
-    <state x="451" y="378" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619734687804">
+    <state x="451" y="378" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619737455243">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
-    <state x="451" y="378" key="#com.intellij.execution.impl.EditConfigurationsDialog/63.0.2497.1440@63.0.2497.1440" timestamp="1619734687804" />
+    <state x="451" y="378" key="#com.intellij.execution.impl.EditConfigurationsDialog/63.0.2497.1440@63.0.2497.1440" timestamp="1619737455243" />
     <state x="664" y="402" key="#com.intellij.ide.util.MemberChooser" timestamp="1619737151737">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
     <state x="664" y="402" key="#com.intellij.ide.util.MemberChooser/63.0.2497.1440@63.0.2497.1440" timestamp="1619737151737" />
-    <state x="357" y="284" width="1180" height="970" key="CommitChangelistDialog2" timestamp="1619736355163">
+    <state x="532" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1619780895632">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
-    <state x="357" y="284" width="1180" height="970" key="CommitChangelistDialog2/63.0.2497.1440@63.0.2497.1440" timestamp="1619736355163" />
+    <state x="532" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/63.0.2497.1440@63.0.2497.1440" timestamp="1619780895632" />
+    <state x="357" y="284" width="1180" height="970" key="CommitChangelistDialog2" timestamp="1619737417854">
+      <screen x="63" y="0" width="2497" height="1440" />
+    </state>
+    <state x="357" y="284" width="1180" height="970" key="CommitChangelistDialog2/63.0.2497.1440@63.0.2497.1440" timestamp="1619737417854" />
     <state x="163" y="100" width="1392" height="1240" key="DiffContextDialog" timestamp="1619736833119">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
     <state x="163" y="100" width="1392" height="1240" key="DiffContextDialog/63.0.2497.1440@63.0.2497.1440" timestamp="1619736833119" />
-    <state x="639" y="475" key="FileChooserDialogImpl" timestamp="1619732564488">
+    <state x="639" y="475" key="FileChooserDialogImpl" timestamp="1619737532401">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
-    <state x="639" y="475" key="FileChooserDialogImpl/63.0.2497.1440@63.0.2497.1440" timestamp="1619732564488" />
+    <state x="639" y="475" key="FileChooserDialogImpl/63.0.2497.1440@63.0.2497.1440" timestamp="1619737532401" />
     <state x="683" y="622" key="Github.CreateGistDialog" timestamp="1619736995138">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
     <state x="683" y="622" key="Github.CreateGistDialog/63.0.2497.1440@63.0.2497.1440" timestamp="1619736995138" />
-    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1619734717631">
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1619779989294">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
-    <state width="196" height="457" key="HiddenNamespacesPopup/63.0.2497.1440@63.0.2497.1440" timestamp="1619734717631" />
-    <state x="360" y="365" key="SettingsEditor" timestamp="1619733806717">
+    <state width="196" height="457" key="HiddenNamespacesPopup/63.0.2497.1440@63.0.2497.1440" timestamp="1619779989294" />
+    <state x="439" y="455" key="IDE.errors.dialog" timestamp="1619737422492">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
-    <state x="360" y="365" key="SettingsEditor/63.0.2497.1440@63.0.2497.1440" timestamp="1619733806717" />
-    <state x="451" y="453" key="Vcs.Push.Dialog.v2" timestamp="1619736903232">
+    <state x="439" y="455" key="IDE.errors.dialog/63.0.2497.1440@63.0.2497.1440" timestamp="1619737422492" />
+    <state x="360" y="365" key="SettingsEditor" timestamp="1619779812777">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
-    <state x="451" y="453" key="Vcs.Push.Dialog.v2/63.0.2497.1440@63.0.2497.1440" timestamp="1619736903232" />
+    <state x="360" y="365" key="SettingsEditor/63.0.2497.1440@63.0.2497.1440" timestamp="1619779812777" />
+    <state x="451" y="453" key="Vcs.Push.Dialog.v2" timestamp="1619737428403">
+      <screen x="63" y="0" width="2497" height="1440" />
+    </state>
+    <state x="451" y="453" key="Vcs.Push.Dialog.v2/63.0.2497.1440@63.0.2497.1440" timestamp="1619737428403" />
+    <state x="649" y="502" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog" timestamp="1619780623727">
+      <screen x="63" y="0" width="2497" height="1440" />
+    </state>
+    <state x="649" y="502" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog/63.0.2497.1440@63.0.2497.1440" timestamp="1619780623727" />
+    <state x="589" y="525" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1619780641881">
+      <screen x="63" y="0" width="2497" height="1440" />
+    </state>
+    <state x="589" y="525" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/63.0.2497.1440@63.0.2497.1440" timestamp="1619780641881" />
     <state x="163" y="100" width="1392" height="1240" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1619735991635">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
@@ -298,10 +347,10 @@
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
     <state x="670" y="578" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration/63.0.2497.1440@63.0.2497.1440" timestamp="1619732447902" />
-    <state x="566" y="453" width="742" height="811" key="find.popup" timestamp="1619734353692">
+    <state x="566" y="453" width="742" height="811" key="find.popup" timestamp="1619780916817">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
-    <state x="566" y="453" width="742" height="811" key="find.popup/63.0.2497.1440@63.0.2497.1440" timestamp="1619734353692" />
+    <state x="566" y="453" width="742" height="811" key="find.popup/63.0.2497.1440@63.0.2497.1440" timestamp="1619780916817" />
     <state x="698" y="450" key="ftp.server.browser" timestamp="1619723038391">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>

@@ -20,7 +20,7 @@ class TagFormType extends AbstractType
     {
         $builder
             ->add('name', TextType::class)
-            ->add('descr', TextareaType::class)
+            ->add('description', TextareaType::class)
             ->add('games', MultiSelectType::class, [
                 'class' => Game::class,
                 'mapped' => true,
