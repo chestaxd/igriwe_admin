@@ -31,6 +31,9 @@ class TwigImageExtension extends AbstractExtension
     public function getURL(string $name, string $imageType)
     {
         $image = Image::fromArray($this->parameters->get($imageType));
+        if (strpos($name, 'https') !== false) {
+            return $name;
+        }
         return $this->imageService->getImageURL($name, $image);
     }
 }

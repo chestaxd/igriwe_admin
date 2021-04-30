@@ -2,23 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10abd77c-3ca1-4f3c-bc2f-7be9e08de640" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20210430105151.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/dev/zenstruck_foundry.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/stof_doctrine_extensions.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/test/zenstruck_foundry.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Factory/CategoryFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Factory/GameFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Factory/TagFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/admin_igriwe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/admin_igriwe.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b4db699f-a1b0-47c2-a244-e8e32f38fc08.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b4db699f-a1b0-47c2-a244-e8e32f38fc08.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Game.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Game.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/CategoryFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/CategoryFormType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/GameFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/GameFormType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/TagFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/TagFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Twig/TwigImageExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Twig/TwigImageExtension.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blocks/_game_list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blocks/_game_list.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,6 +155,11 @@
       <path value="$PROJECT_DIR$/vendor/stof/doctrine-extensions-bundle" />
       <path value="$PROJECT_DIR$/vendor/behat/transliterator" />
       <path value="$PROJECT_DIR$/vendor/gedmo/doctrine-extensions" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/zenstruck/callback" />
+      <path value="$PROJECT_DIR$/vendor/zenstruck/foundry" />
+      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
     </include_path>
   </component>
   <component name="ProjectId" id="1rr6L46k1P6MANPEG9gKLw47oU7" />
@@ -212,7 +216,8 @@
       <updated>1619721801564</updated>
       <workItem from="1619721808786" duration="1567000" />
       <workItem from="1619723453148" duration="10908000" />
-      <workItem from="1619779579390" duration="1332000" />
+      <workItem from="1619779579390" duration="2780000" />
+      <workItem from="1619787927213" duration="9028000" />
     </task>
     <task id="LOCAL-00001" summary="Add src folder">
       <created>1619732749506</created>
@@ -242,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619737418542</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refactoring entity">
+      <created>1619781084603</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619781084603</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +268,8 @@
     <MESSAGE value="admin ready" />
     <MESSAGE value="Install Api =)" />
     <MESSAGE value="hide register form" />
-    <option name="LAST_COMMIT_MESSAGE" value="hide register form" />
+    <MESSAGE value="refactoring entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring entity" />
   </component>
   <component name="WindowStateProjectService">
     <state x="439" y="375" key="#CLI_Interpreters" timestamp="1619732535483">
@@ -295,10 +308,10 @@
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
     <state x="532" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/63.0.2497.1440@63.0.2497.1440" timestamp="1619780895632" />
-    <state x="357" y="284" width="1180" height="970" key="CommitChangelistDialog2" timestamp="1619737417854">
+    <state x="357" y="284" width="1180" height="970" key="CommitChangelistDialog2" timestamp="1619781083682">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
-    <state x="357" y="284" width="1180" height="970" key="CommitChangelistDialog2/63.0.2497.1440@63.0.2497.1440" timestamp="1619737417854" />
+    <state x="357" y="284" width="1180" height="970" key="CommitChangelistDialog2/63.0.2497.1440@63.0.2497.1440" timestamp="1619781083682" />
     <state x="163" y="100" width="1392" height="1240" key="DiffContextDialog" timestamp="1619736833119">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
@@ -323,14 +336,14 @@
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
     <state x="360" y="365" key="SettingsEditor/63.0.2497.1440@63.0.2497.1440" timestamp="1619779812777" />
-    <state x="451" y="453" key="Vcs.Push.Dialog.v2" timestamp="1619737428403">
+    <state x="451" y="453" key="Vcs.Push.Dialog.v2" timestamp="1619781262847">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
-    <state x="451" y="453" key="Vcs.Push.Dialog.v2/63.0.2497.1440@63.0.2497.1440" timestamp="1619737428403" />
-    <state x="649" y="502" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog" timestamp="1619780623727">
+    <state x="451" y="453" key="Vcs.Push.Dialog.v2/63.0.2497.1440@63.0.2497.1440" timestamp="1619781262847" />
+    <state x="649" y="502" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog" timestamp="1619798504116">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
-    <state x="649" y="502" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog/63.0.2497.1440@63.0.2497.1440" timestamp="1619780623727" />
+    <state x="649" y="502" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog/63.0.2497.1440@63.0.2497.1440" timestamp="1619798504116" />
     <state x="589" y="525" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1619780641881">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
@@ -347,10 +360,10 @@
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
     <state x="670" y="578" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration/63.0.2497.1440@63.0.2497.1440" timestamp="1619732447902" />
-    <state x="566" y="453" width="742" height="811" key="find.popup" timestamp="1619780916817">
+    <state x="566" y="453" width="742" height="811" key="find.popup" timestamp="1619796695475">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
-    <state x="566" y="453" width="742" height="811" key="find.popup/63.0.2497.1440@63.0.2497.1440" timestamp="1619780916817" />
+    <state x="566" y="453" width="742" height="811" key="find.popup/63.0.2497.1440@63.0.2497.1440" timestamp="1619796695475" />
     <state x="698" y="450" key="ftp.server.browser" timestamp="1619723038391">
       <screen x="63" y="0" width="2497" height="1440" />
     </state>
