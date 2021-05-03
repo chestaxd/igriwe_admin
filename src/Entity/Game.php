@@ -2,52 +2,76 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiFilter;
 use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\DateFilter;
+use ApiPlatform\Core\Serializer\Filter\PropertyFilter;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\BooleanFilter;
 use App\Repository\GameRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Timestampable\Traits\TimestampableEntity;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass=GameRepository::class)
- * @ApiResource()
+ * @ApiResource(
+ *     collectionOperations={"get"},
+ *     itemOperations={"get"={"path"="/game/{id}"}},
+ *     normalizationContext={"groups"={"game:read"}},
+ * )
+ * @ApiFilter(SearchFilter::class,properties={
+ *     "name": "partial",
+ *     "id": "exact",
+ * })
+ * @ApiFilter(DateFilter::class,properties={"createDate"})
+ * @ApiFilter(BooleanFilter::class, properties={"isPublished"})
+ * @ApiFilter(PropertyFilter::class)
  */
 class Game
 {
 
     use TimestampableEntity;
+
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups({"game:read","category:read"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=100)
+     * @Groups("game:read","category:read")
      */
     private $name;
 
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups("game:read")
      */
     private $description;
 
     /**
      * @ORM\Column(type="boolean", options={"default": 1})
+     * @Groups("game:read")
      */
     private $ads = 1;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups("game:read")
      */
     private $data;
 
     /**
      * @ORM\ManyToOne(targetEntity=Category::class, inversedBy="games")
      * @ORM\JoinColumn(nullable=false)
+     * @Groups("game:read")
      */
     private $category;
 
@@ -59,16 +83,19 @@ class Game
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups("game:read","category:read")
      */
     private $img;
 
     /**
      * @ORM\Column(type="boolean")
+     * @Groups("game:read","category:read")
      */
     private $isPublished = 0;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups("game:read")
      */
     private $keywords;
 

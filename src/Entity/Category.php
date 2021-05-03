@@ -2,15 +2,24 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiFilter;
 use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiSubresource;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\BooleanFilter;
 use App\Repository\CategoryRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass=CategoryRepository::class)
- * @ApiResource()
+ * @ApiResource(
+ *     collectionOperations={"get"},
+ *     itemOperations={"get"={"path"="/category/{id}"}},
+ *     normalizationContext={"groups"={"category:read"}},
+ * )
+ * @ApiFilter(BooleanFilter::class,properties={"game.isPublished"})
  */
 class Category
 {
@@ -18,16 +27,19 @@ class Category
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups({"category:read","game:read"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=25)
+     * @Groups({"category:read","game:read"})
      */
     private $name;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"category:read"})
      */
     private $description;
 
@@ -38,12 +50,15 @@ class Category
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"category:read"})
      */
     private $keywords;
 
     /**
      * @ORM\OrderBy({"id"="DESC"})
+     * @Groups({"category:read"})
      * @ORM\OneToMany(targetEntity=Game::class, mappedBy="category")
+     * @ApiSubresource()
      */
     private $games;
 

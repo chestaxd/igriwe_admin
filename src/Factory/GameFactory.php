@@ -41,7 +41,7 @@ final class GameFactory extends ModelFactory
             'data' => self::faker()->url,
             'img' => self::faker()->imageUrl(200, 150, 'games'),
             'keywords' => self::faker()->words(10, true),
-            'isPublished' => 1,
+            'isPublished' => self::faker()->boolean(50),
             'createdAt' => self::faker()->dateTimeBetween('-2 week', '-1 week'),
         ];
     }
