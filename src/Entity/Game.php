@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiFilter;
 use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiSubresource;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\DateFilter;
 use ApiPlatform\Core\Serializer\Filter\PropertyFilter;
@@ -14,12 +15,23 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Timestampable\Traits\TimestampableEntity;
 use Symfony\Component\Serializer\Annotation\Groups;
+use App\Controller\GetRelevantGames;
 
 /**
  * @ORM\Entity(repositoryClass=GameRepository::class)
  * @ApiResource(
  *     collectionOperations={"get"},
- *     itemOperations={"get"={"path"="/game/{id}"}},
+ *     itemOperations={
+ *          "get"={
+ *              "path"="/game/{id}"
+ *           },
+ *           "get_relative_games"={
+ *              "method"="GET",
+ *              "path"="/game/{id}/relevant",
+ *              "controller"=GetRelevantGames::class,
+ *              "normalization_context"={"groups"={"game:relevand"}},
+ *           }
+ *     },
  *     normalizationContext={"groups"={"game:read"}},
  * )
  * @ApiFilter(SearchFilter::class,properties={
@@ -39,13 +51,13 @@ class Game
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * @Groups({"game:read","category:read"})
+     * @Groups({"game:read","category:read","game:relevand"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=100)
-     * @Groups("game:read","category:read")
+     * @Groups("game:read","category:read","game:relevand")
      */
     private $name;
 
@@ -83,7 +95,7 @@ class Game
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups("game:read","category:read")
+     * @Groups("game:read","category:read","game:relevand")
      */
     private $img;
 

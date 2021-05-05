@@ -30,8 +30,7 @@ security:
         path: logout
         target: mainpage
   role_hierarchy:
-    ROLE_ADMIN:       ROLE_ADMIN
-    ROLE_SUPER_ADMIN: ROLE_ADMIN
+    ROLE_ADMIN: ROLE_ADMIN
   access_control:
     - { path: ^/(login|logout), roles: IS_AUTHENTICATED_ANONYMOUSLY, host: "admin.%app.root_domain%" }
-    - { path: ^/, roles: ROLE_SUPER_ADMIN, host: "admin.%app.root_domain%" }
+    - { path: ^/, roles: ROLE_ADMIN, host: "admin.%app.root_domain%" }

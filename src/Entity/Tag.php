@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiSubresource;
 use App\Repository\TagRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -36,6 +37,7 @@ class Tag
 
     /**
      * @ORM\ManyToMany(targetEntity=Game::class, mappedBy="tags")
+     * @ApiSubresource()
      */
     private $games;
 

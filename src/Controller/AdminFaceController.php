@@ -4,6 +4,7 @@ namespace App\Controller;
 
 
 use App\Entity\Game;
+use App\Service\RelevantGamesService;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -13,7 +14,7 @@ class AdminFaceController extends Controller
     /**
      * @Route("/", name="mainpage")
      */
-    public function index(Request $request): Response
+    public function index(Request $request, GetRelevantGames $relevantGames): Response
     {
         $page = $request->query->get('p');
         $games = $this->getDoctrine()->getRepository(Game::class)->findAll();
@@ -40,5 +41,15 @@ class AdminFaceController extends Controller
         return $this->render('search.html.twig', [
             'games' => $games,
         ]);
+    }
+
+
+    /**
+     * @Route("/rel/{game}", name="rel_test")
+     */
+    public function relevant(Game $game, RelevantGamesService $relevantGames): Response
+    {
+        $relevantGames->handle($game);
+        return new Response('<body>Hi</body>');
     }
 }

@@ -14,15 +14,14 @@ class AppFixtures extends Fixture
     {
         CategoryFactory::createMany(5);
         GameFactory::createMany(
-            100, function () {
+            50, function () {
             return ['category' => CategoryFactory::random()];
         }
         );
         TagFactory::new()->many(25)->create(
             function () {
-                return ['games' => GameFactory::randomRange(1, 10)];
+                return ['games' => GameFactory::randomRange(3, 10)];
             }
         );
-
     }
 }
