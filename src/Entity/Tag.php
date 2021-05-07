@@ -11,10 +11,6 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass=TagRepository::class)
- * @ApiResource(
- *     collectionOperations={"get"},
- *     itemOperations={"get"={"path"="/tag/{id}"}}
- * )
  */
 class Tag
 {

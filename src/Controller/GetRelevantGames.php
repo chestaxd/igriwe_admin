@@ -18,7 +18,6 @@ class GetRelevantGames
 
     public function __invoke(Game $data)
     {
-
         return $this->relevantGames->handle($data);
     }
 }

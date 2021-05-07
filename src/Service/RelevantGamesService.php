@@ -19,6 +19,7 @@ class RelevantGamesService
         $this->gameRepository = $gameRepository;
     }
 
+
     public function handle(Game $game)
     {
         return $this->getRelevantGames($game);
@@ -27,6 +28,7 @@ class RelevantGamesService
     private function getRelevantGames(Game $game)
     {
         $gameTags = $game->getTags();
+        $excludeGames[] = $game->getId();
 
         $tagCountIdx = [];
         $tagGameTotal = 0;
@@ -90,9 +92,13 @@ class RelevantGamesService
                     $shift = rand(0, 50);
                 }
                 if ($showTagList[$key] <= 0) continue;
-                $games = $tags[$key]->getGames()->slice($shift, ceil($showTagList[$key]));
+                $excludeGames[] = 278;
+                $excludeGames[] = 371;
+                $games = $this->gameRepository->getGamesByTag($tags[$key]->getId(), $excludeGames);
+//                $games = $tags[$key]->getGames()->slice($shift, ceil($showTagList[$key]));
                 foreach ($games as $game) {
                     $relevantGames[] = $game;
+                    $excludeGames[] = $game->getId();
                 }
             }
             $i++;

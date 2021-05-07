@@ -3,23 +3,28 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiFilter;
+use ApiPlatform\Core\Annotation\ApiProperty;
 use ApiPlatform\Core\Annotation\ApiResource;
 use ApiPlatform\Core\Annotation\ApiSubresource;
-use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\BooleanFilter;
 use App\Repository\CategoryRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Serializer\Annotation\Groups;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 
 /**
  * @ORM\Entity(repositoryClass=CategoryRepository::class)
+ * @UniqueEntity(
+ *     fields={"subdomain"}
+ * )
  * @ApiResource(
  *     collectionOperations={"get"},
- *     itemOperations={"get"={"path"="/category/{id}"}},
+ *     itemOperations={"get"={"path"="/category/{subdomain}"}},
  *     normalizationContext={"groups"={"category:read"}},
  * )
- * @ApiFilter(BooleanFilter::class,properties={"game.isPublished"})
+ * @ApiFilter(SearchFilter::class, properties={"subdomain":"exact"})
  */
 class Category
 {
@@ -28,6 +33,7 @@ class Category
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      * @Groups({"category:read","game:read"})
+     * @ApiProperty(identifier=false)
      */
     private $id;
 
@@ -44,7 +50,9 @@ class Category
     private $description;
 
     /**
-     * @ORM\Column(type="string", length=20)
+     * @ORM\Column(type="string", name="subdomain", length=20,unique=true)
+     * @Groups({"category:read","game:read", "game:relevand"})
+     * @ApiProperty(identifier=true)
      */
     private $subdomain;
 

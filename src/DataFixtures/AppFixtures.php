@@ -2,6 +2,7 @@
 
 namespace App\DataFixtures;
 
+use App\Entity\Category;
 use App\Factory\CategoryFactory;
 use App\Factory\GameFactory;
 use App\Factory\TagFactory;
@@ -12,16 +13,16 @@ class AppFixtures extends Fixture
 {
     public function load(ObjectManager $manager)
     {
-        CategoryFactory::createMany(5);
         GameFactory::createMany(
-            50, function () {
+            200, function () {
             return ['category' => CategoryFactory::random()];
         }
         );
         TagFactory::new()->many(25)->create(
             function () {
-                return ['games' => GameFactory::randomRange(3, 10)];
+                return ['games' => GameFactory::randomRange(30, 50)];
             }
         );
+        $manager->flush();
     }
 }

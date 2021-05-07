@@ -49,7 +49,7 @@ class AdminFaceController extends Controller
      */
     public function relevant(Game $game, RelevantGamesService $relevantGames): Response
     {
-        $relevantGames->handle($game);
+        dump($relevantGames->handle($game));
         return new Response('<body>Hi</body>');
     }
 }

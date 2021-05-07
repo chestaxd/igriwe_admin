@@ -3,6 +3,7 @@
 namespace App\Repository;
 
 use App\Entity\Game;
+use App\Entity\Tag;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
@@ -31,6 +32,19 @@ class GameRepository extends ServiceEntityRepository
     public function findAll()
     {
         return $this->findBy(array(), array('id' => 'DESC'));
+    }
+
+    public function getGamesByTag($tagId, array $excludeGames = [])
+    {
+        return $this->createQueryBuilder('g')
+            ->leftJoin('g.tags', 't')
+            ->andWhere('g.isPublished=1')
+            ->andWhere('t.id = :tagId')
+            ->andWhere('g.id NOT IN (:excludeGames)')
+            ->setParameter('excludeGames', $excludeGames)
+            ->setParameter('tagId', $tagId)
+            ->getQuery()
+            ->getResult();
     }
 
     // /**

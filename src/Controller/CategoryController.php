@@ -23,6 +23,7 @@ class CategoryController extends Controller
     public function categoriesList()
     {
         $categories = $this->getDoctrine()->getRepository(Category::class)->findAll();
+        dump($categories);
         return $this->render('category/index.html.twig', [
             'categories' => $categories
         ]);

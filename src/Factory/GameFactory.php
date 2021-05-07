@@ -4,6 +4,7 @@ namespace App\Factory;
 
 use App\Entity\Game;
 use App\Repository\GameRepository;
+use phpDocumentor\Reflection\Types\Self_;
 use Zenstruck\Foundry\RepositoryProxy;
 use Zenstruck\Foundry\ModelFactory;
 use Zenstruck\Foundry\Proxy;
@@ -41,8 +42,9 @@ final class GameFactory extends ModelFactory
             'data' => self::faker()->url,
             'img' => self::faker()->imageUrl(200, 150, 'games'),
             'keywords' => self::faker()->words(10, true),
-            'isPublished' => self::faker()->boolean(50),
+            'isPublished' => self::faker()->boolean(80),
             'createdAt' => self::faker()->dateTimeBetween('-2 week', '-1 week'),
+            'rating' => self::faker()->numberBetween(1,1000)
         ];
     }
 

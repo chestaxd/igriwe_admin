@@ -4,11 +4,9 @@ namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiFilter;
 use ApiPlatform\Core\Annotation\ApiResource;
-use ApiPlatform\Core\Annotation\ApiSubresource;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
-use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\DateFilter;
-use ApiPlatform\Core\Serializer\Filter\PropertyFilter;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\BooleanFilter;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\OrderFilter;
 use App\Repository\GameRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -20,6 +18,7 @@ use App\Controller\GetRelevantGames;
 /**
  * @ORM\Entity(repositoryClass=GameRepository::class)
  * @ApiResource(
+ *     attributes={"order"={"updatedAt":"DESC"}},
  *     collectionOperations={"get"},
  *     itemOperations={
  *          "get"={
@@ -37,10 +36,10 @@ use App\Controller\GetRelevantGames;
  * @ApiFilter(SearchFilter::class,properties={
  *     "name": "partial",
  *     "id": "exact",
+ *     "category.subdomain": "exact"
  * })
- * @ApiFilter(DateFilter::class,properties={"createDate"})
  * @ApiFilter(BooleanFilter::class, properties={"isPublished"})
- * @ApiFilter(PropertyFilter::class)
+ * @ApiFilter(OrderFilter::class, properties={"rating": "DESC","updatedAt":"DESC", "name":"ASC"})
  */
 class Game
 {
@@ -83,7 +82,7 @@ class Game
     /**
      * @ORM\ManyToOne(targetEntity=Category::class, inversedBy="games")
      * @ORM\JoinColumn(nullable=false)
-     * @Groups("game:read")
+     * @Groups("game:read","game:relevand")
      */
     private $category;
 
@@ -101,7 +100,7 @@ class Game
 
     /**
      * @ORM\Column(type="boolean")
-     * @Groups("game:read","category:read")
+     * @Groups("game:read","category:read","game:relevand")
      */
     private $isPublished = 0;
 
@@ -110,6 +109,12 @@ class Game
      * @Groups("game:read")
      */
     private $keywords;
+
+    /**
+     * @ORM\Column(type="integer")
+     * @Groups("game:read")
+     */
+    private $rating;
 
     public function __construct()
     {
@@ -244,5 +249,17 @@ class Game
     public function setIsPublished(int $isPublished): void
     {
         $this->isPublished = $isPublished;
+    }
+
+    public function getRating(): ?int
+    {
+        return $this->rating;
+    }
+
+    public function setRating(int $rating): self
+    {
+        $this->rating = $rating;
+
+        return $this;
     }
 }
